@@ -6,10 +6,19 @@ public class Pessoa {
 
 	private String nome;
 	private Endereco endereco;
-	private String telefone;
+	private Telefone telefone;
 	private String cpf;
 	private String rg;
 	private Date dataNascimento;
+
+	public Pessoa(String nome, Endereco endereco, Telefone telefone, String cpf, String rg, Date dataNascimento) {
+		this.nome = nome;
+		this.endereco = endereco;
+		this.telefone = telefone;
+		this.cpf = cpf;
+		this.rg = rg;
+		this.dataNascimento = dataNascimento;
+	}
 
 	public String getNome() {
 		return nome;
@@ -43,20 +52,20 @@ public class Pessoa {
 		this.dataNascimento = dataNascimento;
 	}
 
-	public String getTelefone() {
-		return telefone;
-	}
-
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
-	}
-
 	public Endereco getEndereco() {
 		return endereco;
 	}
 
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
+	}
+
+	public Telefone getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(Telefone telefone) {
+		this.telefone = telefone;
 	}
 
 }

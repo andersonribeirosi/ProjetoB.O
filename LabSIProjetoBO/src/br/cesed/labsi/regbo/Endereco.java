@@ -7,7 +7,6 @@ public class Endereco {
 	private String complemento;
 	private String bairro;
 	private String cidade;
-	private Telefone telefone;
 
 	public String getRua() {
 		return rua;
@@ -49,12 +48,10 @@ public class Endereco {
 		this.cidade = cidade;
 	}
 
-	public Telefone getTelefone() {
-		return telefone;
-	}
-
-	public void setTelefone(Telefone telefone) {
-		this.telefone = telefone;
+	@Override
+	public String toString() {
+		return "Endereco [rua=" + rua + ", numero=" + numero + ", complemento=" + complemento + ", bairro=" + bairro
+				+ ", cidade=" + cidade + "]";
 	}
 
 }

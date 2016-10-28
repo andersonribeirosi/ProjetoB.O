@@ -6,7 +6,6 @@ public class RegistroBoletim {
 
 	private String protocolo;
 	private Pessoa pessoa;
-
 	private Date dataNascimento;
 
 	public String getProtocolo() {
